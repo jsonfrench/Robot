@@ -1,0 +1,36 @@
+async function startProgram() {
+	setMainLed({ r: 255, g: 0, b: 0 });
+	await rawMotor(50, 50, 1);
+	await delay(0.5);
+	setMainLed({ r: 255, g: 96, b: 0 });
+	await delay(0.5);
+	await rawMotor(-50, -50, 1);
+	await delay(0.5);
+	await spin(90, 0);
+	await delay(0.5);
+	await rawMotor(50, 50, 1);
+	await delay(0.5);
+	setMainLed({ r: 255, g: 255, b: 0 });
+	await delay(0.5);
+	await rawMotor(-50, -50, 1);
+	await delay(0.5);
+	await spin(90, 0);
+	await delay(0.5);
+	await rawMotor(50, 50, 1);
+	await delay(0.5);
+	setMainLed({ r: 255, g: 0, b: 255 });
+	await delay(0.5);
+	await rawMotor(-50, -50, 1);
+	await delay(0.5);
+	await spin(90, 0);
+	await delay(0.5);
+	await rawMotor(50, 50, 1);
+	await delay(0.5);
+	setMainLed({ r: 0, g: 0, b: 255 });
+	await delay(0.5);
+	await rawMotor(-50, -50, 1);
+	await delay(0.5);
+	setMainLed({ r: 0, g: 255, b: 0 });
+	await delay(0.5);
+	await speak('“Pretty good right?”', true);
+}
